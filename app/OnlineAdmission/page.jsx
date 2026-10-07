@@ -8,15 +8,49 @@ const OnlineAdmission = () => {
     content: [
       {
         type: "h2",
-        text: "Welcome to NEET School System Online Admission",
+        text: "Online Admissions — Session 2026-2027 (Sargodha Campus)",
       },
       {
         type: "p",
-        text: "We are pleased to make the admission process easier for parents and guardians. Through our online admission page, you can share the basic student details and submit your inquiry without visiting the campus first.",
+        text: "Welcome to the Islamic Alta Vista School System Online Admission Portal. We have designed a convenient registration procedure for parents seeking an inspiring Islamic and modern academic education for their children.",
+      },
+      {
+        type: "br",
+      },
+      {
+        type: "h3",
+        text: "Admission Procedure & Guidelines",
       },
       {
         type: "p",
-        text: "After receiving your form, our team will contact you to guide you regarding class placement, required documents, and the next admission steps.",
+        text: "1. Complete the online admission inquiry form below with student and guardian information.",
+      },
+      {
+        type: "p",
+        text: "2. Our admissions office will reach out within 24-48 hours to schedule a campus tour, friendly interaction, and placement evaluation.",
+      },
+      {
+        type: "p",
+        text: "3. Submit necessary documentation (Student Form-B / Birth Certificate, previous school transcripts, and 4 passport-size photographs) to finalize enrollment.",
+      },
+      {
+        type: "br",
+      },
+      {
+        type: "h3",
+        text: "Available Wings in Sargodha",
+      },
+      {
+        type: "p",
+        text: "• Early Years Montessori: Playgroup, Nursery, Kindergarten (KG)",
+      },
+      {
+        type: "p",
+        text: "• Primary Wing: Grades 1 through 5",
+      },
+      {
+        type: "p",
+        text: "• Middle & Secondary Wing: Grades 6 through 10 / Matriculation",
       },
     ],
   };
@@ -25,7 +59,7 @@ const OnlineAdmission = () => {
     <main>
       <HeroHeader
         title={"Online Admission"}
-        description="Apply for NEET School System"
+        description="Join the Islamic Alta Vista family in Sargodha — apply online for the upcoming session."
       />
       <div className="flex flex-col gap-2 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />

@@ -7,7 +7,7 @@ import Link from "next/link";
 const studentLifeData = [
   { title: "Registration Process", slug: "OLevel" },
   { title: "Withdrawals and Transfers", slug: "ALevel" },
-  { title: "Primary", slug: "Primary" },
+  { title: "Primary Wing", slug: "Primary" },
 ];
 
 export async function generateStaticParams() {
@@ -22,8 +22,8 @@ export async function generateMetadata({ params }) {
   if (!studentLife) notFound();
 
   return {
-    title: `${studentLife.title} - Student Life | NEET School System`,
-    default: "Student Life | NEET School System",
+    title: `${studentLife.title} - Admissions & Student Life | Islamic Alta Vista School System`,
+    default: "Student Life | Islamic Alta Vista School System",
   };
 }
 
@@ -31,49 +31,79 @@ const cmsContentBySlug = {
   OLevel: [
     {
       type: "h2",
-      text: "Registration Process",
+      text: "Student Registration & Admission Process (Sargodha)",
     },
     {
       type: "p",
-      text: "The admission process at NEET School System is designed to be simple and parent-friendly. Families can contact the school office, share the student's basic details, and receive guidance about the relevant class and admission requirements.",
+      text: "The admission process at Islamic Alta Vista School System is designed to be supportive, organized, and parent-friendly. We evaluate every child's academic readiness with warmth, ensuring appropriate grade placement.",
+    },
+    {
+      type: "br",
+    },
+    {
+      type: "h3",
+      text: "Step-by-Step Registration Guide",
     },
     {
       type: "p",
-      text: "Where needed, students may be assessed to understand their current level so that placement and academic support can be planned appropriately.",
+      text: "1. Complete the Online Registration or collect the application prospectus from our Sargodha campus.",
+    },
+    {
+      type: "p",
+      text: "2. Schedule an informal, friendly interaction and basic diagnostic assessment with our academic coordinators.",
+    },
+    {
+      type: "p",
+      text: "3. Submit required documentation (Child's NADRA Form-B, 4 photographs, previous academic reports, parent CNIC copies).",
+    },
+    {
+      type: "p",
+      text: "4. Receive enrollment confirmation, class timetable, and orientation schedule.",
     },
   ],
 
   ALevel: [
     {
       type: "h2",
-      text: "Withdrawals and Transfers",
+      text: "Student Withdrawals and Transfers",
     },
     {
       type: "p",
-      text: "If a family needs to withdraw a student or request a transfer, the school administration helps guide the process in an organized and respectful manner. Parents are encouraged to inform the school in advance so academic and administrative formalities can be completed smoothly.",
+      text: "In the event of family relocation or transfer, Islamic Alta Vista facilitates a seamless and structured clearance process. Parents are requested to inform the administration at least two weeks in advance.",
+    },
+    {
+      type: "br",
+    },
+    {
+      type: "h3",
+      text: "Transfer Protocol",
     },
     {
       type: "p",
-      text: "The aim is to ensure that student records, fee matters, and required documents are handled properly so that the transition remains clear and manageable for the family.",
+      text: "• Formal written withdrawal request submitted by the guardian.",
+    },
+    {
+      type: "p",
+      text: "• Departmental clearance of library books, laboratory apparatus, and tuition dues.",
+    },
+    {
+      type: "p",
+      text: "• Issuance of School Leaving Certificate (SLC) and complete academic transcript.",
     },
   ],
 
   Primary: [
     {
       type: "h2",
-      text: "Primary Student Life",
+      text: "Primary Wing Student Experience in Sargodha",
     },
     {
       type: "p",
-      text: "In the primary years, NEET School System creates a nurturing and engaging environment where students develop strong academic foundations alongside social and emotional growth.",
+      text: "In the primary years (Grades 1 through 5), Islamic Alta Vista School System creates an inspiring, joyful environment where children master foundational mathematics, sciences, languages, and Quranic recitation.",
     },
     {
       type: "p",
-      text: "Through class participation, creative activities, and guided learning, students build confidence, curiosity, and a love for learning.",
-    },
-    {
-      type: "p",
-      text: "Our primary program focuses on holistic development, ensuring every child feels safe, valued, and inspired to grow.",
+      text: "Through active class participation, cooperative projects, and daily Islamic tarbiyah, our young students build unshakeable confidence, curiosity, and exemplary manners.",
     },
   ],
 };
@@ -90,14 +120,17 @@ const StudentLife = async ({ params }) => {
 
   return (
     <main>
-      <HeroHeader title={studentLife.title} description="NEET School System" />
+      <HeroHeader
+        title={studentLife.title}
+        description="Islamic Alta Vista School System — Nurturing Potential in Sargodha."
+      />
       <div className="flex flex-col gap-4 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />
 
         {slug === "OLevel" && (
           <Link href="/OnlineAdmission">
-            <button className="mt-4 w-fit rounded-xl bg-main px-6 py-3 text-white hover:opacity-90 transition">
-              Register Online
+            <button className="mt-4 w-fit rounded-xl bg-main px-6 py-3 text-white font-semibold hover:bg-mainD transition shadow-lg">
+              Open Online Admission Form
             </button>
           </Link>
         )}

@@ -11,50 +11,67 @@ const ChairmanMessage = () => {
       },
       {
         type: "p",
-        text: "Dear students, parents, and well-wishers,",
+        text: "In the name of Allah, the Most Gracious, the Most Merciful.",
       },
       {
         type: "br",
       },
       {
         type: "p",
-        text: "Welcome to NEET School System. We believe education should shape both the mind and the character of a child. Our aim is to provide a school environment where students feel safe, motivated, and guided toward meaningful learning.",
+        text: "Dear students, parents, and respected community members of Sargodha,",
       },
       {
         type: "br",
       },
       {
         type: "p",
-        text: "We are committed to maintaining strong academic standards while also nurturing discipline, honesty, confidence, and respect. Every child deserves individual attention and the opportunity to grow through quality teaching and sincere mentorship.",
+        text: "It gives me great pleasure to welcome you to Islamic Alta Vista School System. Education is the most profound instrument for transforming individuals and societies. When founded upon the timeless teachings of the Holy Quran and Sunnah, combined with the highest standards of contemporary science and humanities, it produces individuals who illuminated the world.",
       },
       {
         type: "br",
       },
       {
         type: "p",
-        text: "At NEET School System, we value our partnership with parents and believe that lasting student success is built when school and home work together. We look forward to supporting your child's progress with care and dedication.",
+        text: "At Islamic Alta Vista, we are dedicated to providing our children with an environment where spiritual tarbiyah, disciplined habits, and academic brilliance develop hand in hand. Our campus in Sargodha is equipped with state-of-the-art facilities, qualified subject masters, and compassionate mentors.",
       },
       {
         type: "br",
       },
       {
         type: "p",
-        text: "With best wishes,",
+        text: "We invite parents to join hands with us as partners in nurturing our future generations to become the beacons of knowledge, faith, and progress.",
+      },
+      {
+        type: "br",
       },
       {
         type: "p",
+        text: "May Allah Almighty guide and bless our students on their educational journey.",
+      },
+      {
+        type: "br",
+      },
+      {
+        type: "p",
+        text: "Wassalam,",
+      },
+      {
+        type: "h4",
         text: "Chairman",
       },
       {
         type: "p",
-        text: "NEET School System",
+        text: "Islamic Alta Vista School System, Sargodha",
       },
     ],
   };
 
   return (
     <main>
-      <HeroHeader title={"Chairman's Message"} description="NEET School System" />
+      <HeroHeader
+        title={"Chairman's Message"}
+        description="A message of inspiration and educational vision from Islamic Alta Vista School System Sargodha."
+      />
       <div className="flex flex-col gap-2 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />
       </div>

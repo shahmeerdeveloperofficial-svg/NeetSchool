@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        berlin: ["Berlin", "sans-serif"], // Regular Berlin font
+        berlin: ["Berlin", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -25,15 +24,18 @@ module.exports = {
         float: "float 3s ease-in-out infinite",
       },
       colors: {
-        main: "#d7a51b",
-        mainD: "#b88308",
-        sec: "#001b44",
-        secD: "#174b83",
-        light: "#fff",
-        dark: "#001b44",
-        gray: "#797979",
-        grayL: "#e4e4e4",
-        grayD: "#555",
+        main: "#0090D0", // Alta Vista Sky Cyan Accent
+        mainD: "#0070A4", // Darker Cyan
+        sec: "#0A1860", // Alta Vista Deep Sapphire Navy
+        secD: "#122A88", // Royal Navy
+        skyBrand: "#38BDF8",
+        skyLight: "#E0F2FE",
+        navyBrand: "#0A1860",
+        light: "#FFFFFF",
+        dark: "#060E36", // Deep Midnight Navy
+        gray: "#64748B",
+        grayL: "#F0F9FF",
+        grayD: "#334155",
       },
     },
   },

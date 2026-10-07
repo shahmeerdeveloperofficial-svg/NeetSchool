@@ -7,55 +7,66 @@ const SocietyAndClubs = () => {
     content: [
       {
         type: "h2",
-        text: "Societies and Clubs",
+        text: "Co-Curricular Societies & Student Clubs",
       },
       {
         type: "p",
-        text: "NEET School System values learning beyond the classroom. Our student life activities are designed to help children build confidence, teamwork, discipline, and healthy expression.",
+        text: "At Islamic Alta Vista School System Sargodha, learning expands beyond the four walls of the classroom. Our student societies provide vibrant avenues for character development, spiritual refinement, scientific inquiry, and athletic prowess.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Reading Activities",
+        type: "h3",
+        text: "1. Qirat, Naat & Seerat Society (بزمِ نعت و قرات)",
       },
       {
         type: "p",
-        text: "Students are encouraged to read regularly, improve vocabulary, and develop a habit of understanding and sharing ideas with confidence.",
+        text: "Dedicated to the art of Tajweed, melodious Hamd and Naat recitations, Seerat-un-Nabi conferences, and Islamic quiz competitions.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Sports and Physical Activity",
+        type: "h3",
+        text: "2. STEM & Robotics Club (سائنس و ٹیکنالوجی سوسائٹی)",
       },
       {
         type: "p",
-        text: "Sports and active play help students stay healthy, focused, and cooperative while learning the value of effort and teamwork.",
+        text: "Engaging students in coding, electronics projects, science exhibition models, and practical experiments.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Creative Expression",
+        type: "h3",
+        text: "3. Bilingual Debating Society (بزمِ ادب و تقریر)",
       },
       {
         type: "p",
-        text: "Through presentations, performances, drawing, and class activities, students explore their creativity and improve self-expression.",
+        text: "Developing eloquent oratory skills in English and Urdu, conducting parliamentary debates, declamation contests, and creative writing workshops.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Speaking and Participation",
+        type: "h3",
+        text: "4. Physical Fitness & Sports Academy",
       },
       {
         type: "p",
-        text: "School activities are also used to improve confidence, communication, and respectful interaction among students.",
+        text: "Encouraging regular athletic conditioning, cricket, football, badminton, and gymnastics under trained physical education instructors.",
+      },
+      {
+        type: "br",
+      },
+      {
+        type: "h3",
+        text: "5. Islamic Arts & Calligraphy Guild (فنِ خطاطی)",
+      },
+      {
+        type: "p",
+        text: "Mastering Arabic and Urdu Khat (calligraphy), visual arts, geometric Islamic design, and annual arts showcases.",
       },
     ],
   };
@@ -63,8 +74,8 @@ const SocietyAndClubs = () => {
   return (
     <main>
       <HeroHeader
-        title={"Society And Clubs"}
-        description="NEET School System"
+        title={"Societies & Clubs"}
+        description="Discover how Islamic Alta Vista School System nurtures leadership and talent in Sargodha."
       />
       <div className="flex flex-col gap-2 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />

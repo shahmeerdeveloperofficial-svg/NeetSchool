@@ -7,99 +7,55 @@ const Policies = () => {
     content: [
       {
         type: "h2",
-        text: "Attendance",
+        text: "School Code of Conduct & Policies (Sargodha Campus)",
       },
       {
         type: "p",
-        text: "Students are expected to attend school regularly so they can maintain continuity in learning and class participation.",
+        text: "Islamic Alta Vista School System maintains clear, compassionate policies designed to ensure a secure, respectful, disciplined, and morally elevated academic community.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Late Arrivals",
+        type: "h3",
+        text: "1. Punctuality & Attendance",
       },
       {
         type: "p",
-        text: "Students should arrive on time. Repeated late arrival may lead to warnings and parent communication from the school office.",
+        text: "Consistent attendance is vital for spiritual and academic progress. A minimum of 85% attendance is required. School gates close promptly before the morning assembly and Quran recitation.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Absences",
+        type: "h3",
+        text: "2. Islamic Uniform & Modesty Guidelines",
       },
       {
         type: "p",
-        text: "Parents should inform the school regarding absences. Medical or extended leave should be communicated with the administration as early as possible.",
+        text: "Students must wear the designated school uniform neatly pressed, embodying modesty, cleanliness, and pride in their Islamic identity.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Uniform and Grooming",
+        type: "h3",
+        text: "3. Zero-Tolerance Anti-Bullying Policy",
       },
       {
         type: "p",
-        text: "Students are expected to come to school in proper uniform and maintain a neat, clean, and presentable appearance.",
+        text: "We maintain a strict zero-tolerance policy against any form of bullying, mockery, or disrespect. The physical, emotional, and spiritual safety of every child is fiercely protected.",
       },
       {
         type: "br",
       },
       {
-        type: "h2",
-        text: "Discipline",
+        type: "h3",
+        text: "4. Campus Safety & Digital Device Restrictions",
       },
       {
         type: "p",
-        text: "Respectful behavior, classroom discipline, and responsible conduct are expected from every student. Serious or repeated misconduct may lead to parent meetings or disciplinary action.",
-      },
-      {
-        type: "br",
-      },
-      {
-        type: "h2",
-        text: "Prohibited Items",
-      },
-      {
-        type: "p",
-        text: "Students should not bring unnecessary electronic devices or inappropriate items to school unless specifically allowed for academic use.",
-      },
-      {
-        type: "br",
-      },
-      {
-        type: "h2",
-        text: "Fee and Communication",
-      },
-      {
-        type: "p",
-        text: "Fee schedules, notices, and school updates are communicated through the school administration. Parents are encouraged to stay in touch with official channels for the latest information.",
-      },
-      {
-        type: "br",
-      },
-      {
-        type: "h2",
-        text: "Parent Meetings",
-      },
-      {
-        type: "p",
-        text: "Parents may contact the school for scheduled meetings regarding academic progress, behavior, attendance, or general school matters.",
-      },
-      {
-        type: "br",
-      },
-      {
-        type: "h2",
-        text: "Bullying and Harassment Policy",
-      },
-      {
-        type: "p",
-        text: "NEET School System is committed to a safe and respectful environment for all students. Bullying and harassment in any form are strictly prohibited and will be addressed seriously by the school administration.",
+        text: "Personal smartphones and unauthorized electronic gadgets are strictly prohibited during school hours to maintain focus, respectful peer interactions, and classroom sanctity.",
       },
     ],
   };
@@ -107,8 +63,8 @@ const Policies = () => {
   return (
     <main>
       <HeroHeader
-        title={"Guidelines and Policies"}
-        description={"NEET School System"}
+        title={"Rules & Policies"}
+        description={"Islamic Alta Vista School System — Fostering discipline, modesty, and integrity."}
       />
       <div className="flex flex-col gap-2 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />

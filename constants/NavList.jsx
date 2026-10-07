@@ -2,36 +2,40 @@ export const NavList = [
   {
     title: "About School",
     content: [
-      { title: "About NEET School System", slug: "/AboutUs" },
+      { title: "About Islamic Alta Vista", slug: "/AboutUs" },
       { title: "Chairman's Message", slug: "/ChairmanMessage" },
       { title: "Director's Message", slug: "/DirectorMessage" },
-      { title: "Our Philosophy", slug: "/OurPhilosophy" },
-      { title: "Our Journey", slug: "/OurJourney" },
+      { title: "Our Islamic Philosophy", slug: "/OurPhilosophy" },
+      { title: "Our Journey & Milestones", slug: "/OurJourney" },
+      { title: "School Policies", slug: "/AboutUs/Policies" },
+      { title: "FAQs", slug: "/AboutUs/FAQs" },
     ],
   },
   {
     title: "Curriculum",
     content: [
-      { title: "Academic Program", slug: "/Curriculum/EarlyYears" },
+      { title: "Early Years & Montessori", slug: "/Curriculum/EarlyYears" },
+      { title: "Nazra & Hifz Integration", slug: "/Curriculum/EarlyYears" },
+      { title: "STEM & Modern Sciences", slug: "/Curriculum/EarlyYears" },
     ],
   },
   {
-    title: "Admission",
+    title: "Admissions",
     content: [
+      { title: "Online Admission", slug: "/OnlineAdmission" },
       { title: "Registration Process", slug: "/StudentLife/OLevel" },
-      {
-        title: "Withdrawals and Transfers",
-        slug: "/StudentLife/ALevel",
-      },
+      { title: "Withdrawals and Transfers", slug: "/StudentLife/ALevel" },
     ],
   },
   {
     title: "Student Life",
     content: [
-      { title: "Society and Clubs", slug: "/SocietyAndClubs" },
-      { title: "Student Counselling & Mentoring Session", slug: "/StudentCounselling" },
-      { title: "Parenting Workshop", slug: "/ParentingWorkshop" },
-      { title: "Teacher Training", slug: "/TeacherTraining" },
+      { title: "Societies & Clubs", slug: "/SocietyAndClubs" },
+      { title: "Character Mentoring & Counselling", slug: "/StudentCounselling" },
+      { title: "Parenting Workshops", slug: "/ParentingWorkshop" },
+      { title: "Teacher Training Programs", slug: "/TeacherTraining" },
+      { title: "Islamic & General Library", slug: "/Library" },
+      { title: "Physical Fitness & Sports", slug: "/ExtraCurricularActivities" },
     ],
   },
   {

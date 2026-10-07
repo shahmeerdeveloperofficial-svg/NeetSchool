@@ -7,39 +7,54 @@ const OurJourney = () => {
     content: [
       {
         type: "h2",
-        text: "Our Journey",
+        text: "The Journey of Islamic Alta Vista School System",
       },
       {
         type: "p",
-        text: "NEET School System was established with the purpose of serving families through accessible, caring, and meaningful education.",
+        text: "Islamic Alta Vista School System was established in Sargodha with a distinct and noble ambition: to create an educational institution that offers the highest standard of contemporary English-medium schooling without compromising Islamic identity and moral values.",
       },
       {
         type: "br",
       },
       {
+        type: "h2",
+        text: "Our Foundations in Sargodha",
+      },
+      {
         type: "p",
-        text: "From the beginning, the school has focused on creating a structured environment where children can build strong academic foundations while also learning discipline, respect, and confidence.",
+        text: "From our first academic session, we set out to build a safe, purpose-designed campus featuring dedicated Montessori activity rooms, well-stocked science and computer labs, and a warm atmosphere of respect and discipline.",
       },
       {
         type: "br",
       },
       {
+        type: "h2",
+        text: "Milestones of Growth",
+      },
+      {
         type: "p",
-        text: "As the school continues to grow, our commitment remains the same: to support each student with sincere teaching, responsible guidance, and a school culture that values both learning and character.",
+        text: "Over the years, our students have achieved stellar academic results, earned awards in regional Qirat, Naat, and debate competitions, and developed strong reputations for poise and integrity. Parents throughout Sargodha have embraced our integrated Islamic curriculum.",
       },
       {
         type: "br",
       },
       {
+        type: "h2",
+        text: "Vision for the Future",
+      },
+      {
         type: "p",
-        text: "Our journey is rooted in service to the local community, and we look forward to helping many more children move toward a brighter future.",
+        text: "We continue to expand our digital learning resources, robotics labs, teacher professional development programs, and community outreach initiatives, preparing our graduates to be the visionary Muslim leaders of tomorrow.",
       },
     ],
   };
 
   return (
     <main>
-      <HeroHeader title={"Our Journey"} description="NEET School System" />
+      <HeroHeader
+        title={"Our Journey"}
+        description="Tracing the history, growth, and vision of Islamic Alta Vista School System in Sargodha."
+      />
       <div className="flex flex-col gap-2 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />
       </div>

@@ -3,44 +3,44 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Foundational Learning",
-    color: "bg-[#c33e3f]",
-    desc: "We focus on concept-based teaching in core subjects so students build clear understanding, confidence, and steady academic progress from the early years onward.",
+    title: "Quran & Sunnah Foundations",
+    color: "bg-sec",
+    desc: "We integrate daily Quranic recitation with Tajweed, age-appropriate Hadeeth studies, and authentic Islamic manners into the core academic routine.",
   },
   {
-    title: "Caring Environment",
-    color: "bg-[#232d6a]",
-    desc: "NEET School System believes children thrive in a secure and respectful atmosphere where teachers guide with patience, discipline, and personal attention.",
+    title: "Rigorous Modern Academics",
+    color: "bg-main",
+    desc: "English, Mathematics, General Sciences, and Social Studies taught through contemporary concept-building pedagogy to ensure top competitive performance.",
   },
   {
-    title: "Character Building",
-    color: "bg-[#f0b24b]",
-    desc: "Strong manners, honesty, responsibility, and respect are woven into school life so that students grow not only academically, but also morally and socially.",
+    title: "Character & Tarbiyah Cell",
+    color: "bg-secD",
+    desc: "Focusing on truthfulness, respect for parents and elders, modesty, empathy, and social responsibility to develop upright Islamic personalities.",
   },
   {
-    title: "Parent Partnership",
-    color: "bg-[#4d6b3c]",
-    desc: "We believe real progress happens when school and home work together, so we keep communication open and involve parents in each child's learning journey.",
+    title: "Modern STEM & Computer Labs",
+    color: "bg-skyBrand",
+    desc: "Equipping young Muslims with digital literacy, coding foundations, and practical scientific experimentation in well-equipped laboratories.",
   },
   {
-    title: "Student Confidence",
-    color: "bg-[#b76d2d]",
-    desc: "Through presentations, class participation, activities, and mentorship, students learn to express themselves, take initiative, and develop healthy self-belief.",
+    title: "Bilingual Eloquence",
+    color: "bg-sec",
+    desc: "Cultivating articulate public speaking in English, Urdu, and basic Arabic through declamations, Qirat, and debate competitions.",
   },
   {
-    title: "Activity-Based Growth",
-    color: "bg-[#7d8b32]",
-    desc: "Sports, clubs, assemblies, and school events help students discover interests, improve teamwork, and enjoy a balanced school experience beyond textbooks.",
+    title: "Physical Fitness & Sunnah Sports",
+    color: "bg-main",
+    desc: "Encouraging swimming, martial arts, cricket, football, and athletics to foster physical vigor, stamina, and cooperative team spirit.",
   },
   {
-    title: "Progress Monitoring",
-    color: "bg-[#5f4b8b]",
-    desc: "Regular assessments and feedback help us understand each learner's strengths and needs, allowing timely support and consistent academic improvement.",
+    title: "Dedicated Early Years Montessori",
+    color: "bg-secD",
+    desc: "A warm, nurturing environment for Playgroup, Nursery, and KG where little learners build foundational cognitive, linguistic, and sensory skills.",
   },
   {
-    title: "Community Values",
-    color: "bg-[#3b6778]",
-    desc: "As a school rooted in Pakpattan, we aim to serve families with sincerity, quality teaching, and an educational culture that supports long-term growth.",
+    title: "Safe & Moral Campus in Sargodha",
+    color: "bg-skyBrand",
+    desc: "A secure, air-cooled, CCTV-monitored campus with separate wings and caring faculty dedicated to student safety and moral cultivation.",
   },
 ];
 
@@ -50,7 +50,7 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
+      delay: i * 0.08,
       duration: 0.4,
       ease: "easeOut",
     },
@@ -59,34 +59,40 @@ const cardVariants = {
 
 function Card({ color, title, desc }) {
   return (
-    <div className="flex-1 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-4 sm:p-6 bg-white border border-main group">
-      <h3 className="text-base sm:text-xl font-semibold mb-2 flex items-center gap-2 relative py-2 pl-4">
-        <div
-          className={`${color} h-full w-1.5 group-hover:w-full transition-all duration-300 rounded-md inline-block absolute left-0 top-0`}
-        ></div>
-        <span className="inline-block relative z-10 group-hover:text-white transition-all duration-300">
-          {title}
-        </span>
-      </h3>
-      <p className="text-gray space-y-3 text-xs sm:text-base leading-normal">
-        {desc}
-      </p>
+    <div className="flex-1 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 bg-white border border-sky-100 group flex flex-col justify-between">
+      <div>
+        <h3 className="text-base sm:text-xl font-bold mb-3 flex items-center gap-2 relative py-2 pl-4 text-dark">
+          <div
+            className={`${color} h-full w-2 group-hover:w-full transition-all duration-300 rounded-md inline-block absolute left-0 top-0 opacity-90`}
+          ></div>
+          <span className="inline-block relative z-10 group-hover:text-white transition-all duration-300">
+            {title}
+          </span>
+        </h3>
+        <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+          {desc}
+        </p>
+      </div>
     </div>
   );
 }
 
 export default function About() {
   return (
-    <section className="maxWSec px-6 sm:px-12 py-12 flex gap-12 flex-col">
-      <div className="text-center space-y-4">
+    <section className="maxWSec px-6 sm:px-12 py-16 flex gap-12 flex-col">
+      <div className="text-center space-y-3">
+        <div className="inline-block px-4 py-1 rounded-full bg-sky-50 text-sec font-semibold text-xs sm:text-sm tracking-wider uppercase border border-sky-200">
+          Our Educational Pillars
+        </div>
         <h2 className="h2">
-          Why Families Choose <span className="text-main">NEET School System</span>
+          Why Families Choose <span className="text-sec">Islamic Alta Vista</span>{" "}
+          <span className="text-main">Sargodha</span>
         </h2>
-        <h2 className="h3 text-gray !font-normal">
-          A value-driven school experience designed for meaningful learning
-        </h2>
+        <p className="h3 text-gray !font-normal text-base sm:text-xl max-w-3xl mx-auto">
+          An integrated institution where academic excellence meets spiritual enlightenment and moral leadership.
+        </p>
       </div>
-      <div className="flex flex-wrap justify-center p-4">
+      <div className="flex flex-wrap justify-center -m-3">
         {features.map((feature, i) => (
           <motion.div
             key={feature.title}
@@ -95,7 +101,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={cardVariants}
-            className="w-full sm:w-1/2 xl:w-1/3 max-sm:pb-4 sm:p-3 flex"
+            className="w-full sm:w-1/2 lg:w-1/4 p-3 flex"
           >
             <Card {...feature} />
           </motion.div>

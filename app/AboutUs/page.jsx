@@ -11,7 +11,7 @@ const AboutUs = () => {
       },
       {
         type: "p",
-        text: "Our vision is to help students of Pakpattan grow into confident, capable, and responsible individuals through meaningful education, strong values, and a supportive school culture.",
+        text: "Our vision is to be Sargodha's premier Islamic institution of academic distinction and spiritual enlightenment, fostering a generation of Muslims who lead with intellect, moral courage, and compassionate civic responsibility.",
       },
       {
         type: "br",
@@ -22,73 +22,76 @@ const AboutUs = () => {
       },
       {
         type: "p",
-        text: "NEET School System is committed to providing quality education in a safe and caring environment where children can build academic strength, confidence, discipline, and respect for others.",
+        text: "Islamic Alta Vista School System is committed to delivering a balanced education where Quranic values, Tajweed, and character tarbiyah are seamlessly integrated with 21st-century science, technology, mathematics, and language fluencies in a safe and disciplined campus.",
       },
       {
         type: "br",
       },
       {
         type: "h2",
-        text: "Our Philosophy",
+        text: "Our Islamic Philosophy",
       },
       {
         type: "p",
-        text: "We believe every child can learn and flourish when guided with patience, clarity, and consistency. Our teaching approach values concept-based learning, positive character formation, and healthy partnership with families.",
+        text: "We believe knowledge is a sacred trust. Our pedagogical methodology nurtures curiosity, conceptual reasoning, and ethical discernment, preparing learners to excel both in this world and the hereafter.",
       },
       {
         type: "br",
       },
       {
         type: "h2",
-        text: "Core Values",
+        text: "Our Core Values",
       },
       {
         type: "h4",
-        text: "Respect",
+        text: "Taqwa & Integrity (تقویٰ اور دیانت)",
       },
       {
         type: "p",
-        text: "We promote respectful behavior toward teachers, classmates, parents, and the wider community.",
+        text: "We instill consciousness of Allah Almighty, truthfulness, modesty, and honesty across all aspects of student life.",
       },
       {
         type: "br",
       },
       {
         type: "h4",
-        text: "Discipline",
+        text: "Academic Distinction (علمی فضیلت)",
       },
       {
         type: "p",
-        text: "A disciplined environment helps students stay focused, responsible, and prepared for lifelong growth.",
+        text: "We strive for excellence in competitive examinations, scientific inquiry, and language masteries through concept-driven pedagogy.",
       },
       {
         type: "br",
       },
       {
         type: "h4",
-        text: "Learning",
+        text: "Respect & Akhlaq (حسن اخلاق)",
       },
       {
         type: "p",
-        text: "We aim to develop clear understanding, strong fundamentals, and a sincere love for learning in every classroom.",
+        text: "We emphasize polite speech, deep respect for parents and teachers, and kindness toward peers and society.",
       },
       {
         type: "br",
       },
       {
         type: "h4",
-        text: "Care",
+        text: "Innovation & Inquiry (تخلیق و تحقیق)",
       },
       {
         type: "p",
-        text: "We believe students perform best when they feel seen, supported, and encouraged in a nurturing school environment.",
+        text: "We encourage STEM curiosity, computer literacy, and practical experimentation to develop forward-looking leaders.",
       },
     ],
   };
 
   return (
     <main>
-      <HeroHeader title={"About"} description="NEET School System" />
+      <HeroHeader
+        title={"About Us"}
+        description="Islamic Alta Vista School System — Nurturing Faith, Knowledge, and Character in Sargodha."
+      />
       <div className="flex flex-col gap-2 maxWSec px-6 sm:px-12 py-12">
         <RichTextRenderer content={cmsData.content} />
       </div>

@@ -14,22 +14,26 @@ const Stats2 = dynamic(() => import("../components/Stats2"));
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-sky-50/30">
       <HeroHeader
         title={
           <>
-            NEET School <br /> System
+            ISLAMIC ALTA VISTA <br />
+            <span className="text-main">SCHOOL SYSTEM</span>
           </>
         }
-        description="A purposeful learning environment where strong academics, character building, confidence, and student wellbeing grow together."
+        description="A premier center of Islamic moral education, Quranic tarbiyah, and modern academic distinction in Sargodha."
       />
       <Bento />
       <Marquee
         direction={"right"}
-        speed={0.2}
+        speed={0.25}
         List={[
-          "Admissions open for motivated learners in Pakpattan.",
-          "A balanced school experience built on values, confidence, and academic growth.",
+          "★ Admissions Open for Session 2026-2027 in Sargodha",
+          "★ Quranic Tajweed, Nazra & Tarbiyah Integrated Program",
+          "★ Modern STEM Science & Computer Laboratories",
+          "★ Playgroup, Montessori, Primary & Middle Wings",
+          "★ Character Mentorship & Qirat / Naat / Debate Societies",
         ]}
       />
       <Pipeline />
